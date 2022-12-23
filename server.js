@@ -8,6 +8,10 @@ const PORT = process.env.PORT || DEFAULT_PORT
 
 app.use(express.static(path.join(__dirname + "/dist")))
 
+app.get("/*", (req, res) => {
+  res.sendFile(__dirname + "/dist/pages/404.html")
+})
+
 app.listen(PORT, () => {
   console.log(`Server has been started on port ${PORT}`)
 })

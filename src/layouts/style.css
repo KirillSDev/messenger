@@ -1,0 +1,15 @@
+.auth {
+  background-image: url("/src/assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+/* .auth-form {
+}
+.auth-form__header {
+}
+.auth-form__main {
+}
+.auth-form__footer {
+} */

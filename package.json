@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "clear": "rm -rf ./dist/",
+    "clear": "rm -rf dist .parcel-cache",
     "start": "npm run build && nodemon -L ./server.js --open",
-    "build": "parcel build ./src/layouts/index.hbs",
-    "dev": "npm run clear && parcel ./src/layouts/index.hbs --no-cache --open -p 3000"
+    "build": "parcel build ./src/index.hbs src/pages/*.hbs --no-cache --no-source-maps",
+    "dev": "parcel src/index.hbs src/pages/*.hbs --no-cache --no-source-maps"
   },
   "author": "KirillSDev",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "@anikin/parcel-transformer-handlebars": "1.0.9",
     "parcel": "2.8.2",
     "parcel-transformer-hbs": "1.0.4",
+    "postcss-import": "^15.1.0",
     "postcss-nested": "6.0.0"
   },
   "dependencies": {
