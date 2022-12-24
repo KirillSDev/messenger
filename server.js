@@ -8,8 +8,11 @@ const PORT = process.env.PORT || DEFAULT_PORT
 
 app.use(express.static(path.join(__dirname + "/dist")))
 
+app.get("/500", (req, res) => {
+  res.sendFile(__dirname + "/dist/pages/500/500.html")
+})
 app.get("/*", (req, res) => {
-  res.sendFile(__dirname + "/dist/pages/404.html")
+  res.sendFile(__dirname + "/dist/pages/404/404.html")
 })
 
 app.listen(PORT, () => {

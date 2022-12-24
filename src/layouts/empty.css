@@ -1,0 +1,38 @@
+.empty {
+  background-image: url("../assets/404.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  &__alert {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__alert > div {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+  &__alert > div > h2 {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  &__alert > div > a {
+    text-decoration: none;
+    color: #474040;
+    transition: all 0.05s ease-in;
+  }
+  &__alert > div > a:hover {
+    color: #201a1a;
+    font-size: 18px;
+  }
+}

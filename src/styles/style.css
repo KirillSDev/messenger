@@ -1,7 +1,15 @@
-@import "/src/componets/input/input.css";
-@import "/src/layouts/style.css";
+@import "../components/input/input.css";
+@import "../components/button/button.css";
+@import "../components/link/link.css";
+@import "../layouts/auth.css";
+
+@import "../layouts/empty.css";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
 }

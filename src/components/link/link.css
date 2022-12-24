@@ -1,0 +1,12 @@
+.link {
+  display: flex;
+  justify-content: center;
+  padding-top: 21px;
+}
+.link > a {
+  text-decoration: none;
+  color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}

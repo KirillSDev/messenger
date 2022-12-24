@@ -5,8 +5,8 @@
   "scripts": {
     "clear": "rm -rf dist .parcel-cache",
     "start": "npm run build && nodemon -L ./server.js --open",
-    "build": "parcel build ./src/index.hbs src/pages/*.hbs --no-cache --no-source-maps",
-    "dev": "parcel src/index.hbs src/pages/*.hbs --no-cache --no-source-maps"
+    "build": "parcel build ./src/index.hbs src/pages/**/*.hbs --no-cache --no-source-maps",
+    "dev": "parcel src/index.hbs src/pages/**/*.hbs --no-cache --no-source-maps"
   },
   "author": "KirillSDev",
   "license": "ISC",

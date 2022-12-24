@@ -4,12 +4,12 @@ css:
 - ./styles/style.css
 ---
 {{#extend "auth"}}
-
 {{#content "main"}}
-2
+{{>input/input text="Username" type="text" placeholder="Username"}}
+{{>input/input text="Password" type="password" placeholder="********"}}
 {{/content}}
 {{#content "footer"}}
-Hello
+{{>button/button text="Sign in" class="auth-form__sign-in-button" link="#"}}
+{{>link/link text="Create a user" class="auth-form__sign-in-link" link="./pages/register/register.hbs"}}
 {{/content}}
-
 {{/extend}}
