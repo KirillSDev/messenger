@@ -1,0 +1,20 @@
+---
+title: Register
+css:
+- ../../styles/style.css
+---
+{{#extend "auth"}}
+{{#content "main"}}
+{{>input/input text="Email" type="email" placeholder="sample@example.com"}}
+{{>input/input text="Username" type="text" placeholder="Enter Username"}}
+{{>input/input text="First Name" type="text" placeholder= "Enter your First Name"}}
+{{>input/input text="Last Name" type="text" placeholder="Enter your Last Name"}}
+{{>input/input text="Phone" type="tel" placeholder="Mobile Number"}}
+{{>input/input text="Password" type="password" placeholder="********"}}
+{{>input/input text="Confirm Password" type="password" placeholder="********"}}
+{{/content}}
+{{#content "footer"}}
+{{>button/button text="Create account" class="auth-form__register-button" link="#"}}
+{{>link/link text="Already have an account?" class="auth-form__register-link" link="../../index.hbs"}}
+{{/content}}
+{{/extend}}

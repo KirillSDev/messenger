@@ -1,0 +1,15 @@
+---
+title: Login
+css:
+- ./styles/style.css
+---
+{{#extend "auth"}}
+{{#content "main"}}
+{{>input/input text="Username" type="text" placeholder="Username"}}
+{{>input/input text="Password" type="password" placeholder="********"}}
+{{/content}}
+{{#content "footer"}}
+{{>button/button text="Sign in" class="auth-form__sign-in-button" link="#"}}
+{{>link/link text="Create a user" class="auth-form__sign-in-link" link="./pages/register/register.hbs"}}
+{{/content}}
+{{/extend}}
