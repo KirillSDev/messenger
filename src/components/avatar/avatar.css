@@ -1,0 +1,45 @@
+.avatar {
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  &__img {
+    opacity: 0.8;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s linear;
+  }
+  &__circle {
+    border-radius: 80px;
+    cursor: pointer;
+  }
+  #avatar-file {
+    display: none;
+    visibility: none;
+  }
+}
+.avatar__label:hover {
+  .avatar__circle {
+    opacity: 0;
+  }
+  .avatar__second-circle {
+    opacity: 1;
+    box-shadow: inset 0px 4px 60px rgba(24, 23, 23, 0.6);
+  }
+  .avatar__img {
+    opacity: 0;
+  }
+}
+.avatar__second-circle {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 80px;
+  top: 48.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: box-shadow 0.2s ease;
+}

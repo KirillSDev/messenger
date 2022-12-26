@@ -1,0 +1,20 @@
+<div class="profile__container">
+    {{>btnBack/btnBack class="profile__btn-back" link="../../index.hbs"}}
+    <div class="profile__info">
+        <div class="profile__block-avatar">
+            {{>avatar/avatar class="profile__avatar"}}
+            <h2 class="profile__name">Kirill</h2>
+        </div>
+        {{>itemProfile/itemProfile class="profile__line" text-left="Email" text-right="sample@example.com"}}
+        {{>itemProfile/itemProfile class="profile__line" text-left="Username" text-right="Kirill01"}}
+        {{>itemProfile/itemProfile class="profile__line" text-left="Name" text-right="Kirill"}}
+        {{>itemProfile/itemProfile class="profile__line" text-left="Last Name" text-right="Starodubtsev"}}
+        {{>itemProfile/itemProfile class="profile__line" text-left="Name in Chat" text-right="Kirill"}}
+        {{>itemProfile/itemProfile class="profile__line" text-left="Phone" text-right="+995 356 789"}}
+        {{>linkProfile/linkProfile text="Change information" class="profile__info-change-link"
+        link="../editProfile/editProfile.hbs"}}
+        {{>linkProfile/linkProfile text="Change password" class="profile__password-change-link"
+        link="../editPassword/editPassword.hbs"}}
+        {{>linkProfile/linkProfile text="Exit" class="profile__exit-link" link="../../index.hbs"}}
+    </div>
+</div>

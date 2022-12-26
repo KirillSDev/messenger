@@ -1,0 +1,25 @@
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+
+  &__item-left {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #100d0d;
+  }
+  &__item-right {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #999999;
+  }
+}

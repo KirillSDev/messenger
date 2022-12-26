@@ -10,8 +10,9 @@
   border: none;
   padding: 12px 0px;
   width: 100%;
-  transition: all 0.15s ease-in;
+  transition: background-color 0.15s ease-in;
 }
 .button:hover {
   background-color: #dbd5d5;
+  cursor: pointer;
 }
