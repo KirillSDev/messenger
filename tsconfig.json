@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "rootDir": "src",
+      "outDir": "dist",
+      "target": "esnext",
+      "declaration": false,
+      "module": "CommonJS",
+      "strictNullChecks": true,
+      "sourceMap": true,
+    }
+  }
