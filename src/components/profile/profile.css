@@ -1,0 +1,29 @@
+.profile {
+  background-image: url("../assets/backgroundBlur.svg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+  margin: auto;
+  &__container {
+    margin: 0px 60px;
+    height: 100%;
+    padding-top: calc(50px);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  &__info {
+    width: 512px;
+    align-items: center;
+  }
+  &__name {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+}

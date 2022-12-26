@@ -1,0 +1,14 @@
+.edit-profile {
+  &__container {
+    margin: 0px 60px;
+    height: 100%;
+    padding-top: calc(50px);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  &__info {
+    width: 512px;
+    align-items: center;
+  }
+}

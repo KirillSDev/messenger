@@ -1,0 +1,19 @@
+.link-profile {
+  display: flex;
+  padding-top: 21px;
+}
+.link-profile > a {
+  text-decoration: none;
+  color: #686565;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-shadow: 0 0 0.4px #141718, 0 0 0.8px #def1f9, 0 0 1.2px #deeff7, 0 0 1.6px #dfeef5,
+    0 0 2px #dfecf3, 0 0 2.4px #dfebf0, 0 0 2.8px #dfe9ee, 0 0 3.2px #e0e8ec,
+    0 0 3.6px #e0e6ea, 0 0 4px #e0e5e8;
+}
+.link-profile > a:hover {
+  text-shadow: 0 0 1px #141718, 0 0 0.8px #def1f9, 0 0 1.2px #deeff7, 0 0 1.6px #dfeef5,
+    0 0 2px #dfecf3, 0 0 2.4px #dfebf0, 0 0 2.8px #dfe9ee, 0 0 3.2px #e0e8ec,
+    0 0 3.6px #e0e6ea, 0 0 4px #e0e5e8;
+}

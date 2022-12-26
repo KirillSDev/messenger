@@ -1,0 +1,22 @@
+<div class="edit-profile__container">
+    {{>btnBack/btnBack class="profile__btn-back" link="../profile/profile"}}
+    <div class="edit-profile__info">
+        <div class="edit-profile__block-avatar">
+            {{>avatar/avatar class="edit-profile__avatar"}}
+        </div>
+        {{>input/input class="edit-profile__line" text="Email" type="text"
+        placeholder="sample@example.com"}}
+        {{>input/input class="edit-profile__line" text="Username" type="text"
+        placeholder="Kirill01"}}
+        {{>input/input class="edit-profile__line" text="Name" type="text"
+        placeholder="Kirill"}}
+        {{>input/input class="edit-profile__line" text="Last Name" type="text"
+        placeholder="Starodubtsev"}}
+        {{>input/input class="edit-profile__line" text="Name in Chat" type="text"
+        placeholder="Kirill"}}
+        {{>input/input class="edit-profile__line" text="Phone" type="tel"
+        placeholder="+995 356 789"}}
+        {{>button/button text="Save" class="edit-profile__button-save" link="../profile/profile"}}
+
+    </div>
+</div>

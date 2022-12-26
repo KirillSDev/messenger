@@ -3,13 +3,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  overflow: hidden;
+  /* height: auto; */
+  overflow: auto;
+  padding-top: calc(50px);
 }
 .auth-form {
   max-width: 510px;
   /* max-height: 675px; */
   margin: auto;
-  margin-top: calc(100px);
   background-color: rgb(255, 255, 255);
   box-shadow: 10px 0px 6px rgba(244, 163, 67, 0.14);
   border-radius: 12px;

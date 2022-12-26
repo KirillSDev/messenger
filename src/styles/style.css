@@ -1,8 +1,15 @@
 @import "../components/input/input.css";
 @import "../components/button/button.css";
 @import "../components/link/link.css";
-@import "../layouts/auth.css";
+@import "../components/linkProfile/linkProfile.css";
+@import "../components/avatar/avatar.css";
+@import "../components/btnBack/btnBack.css";
+@import "../components/itemProfile/itemProfile.css";
+@import "../components/profile/profile.css";
+@import "../components/editProfile/editProfile.css";
+@import "../components/editPassword/editPassword.css";
 
+@import "../layouts/auth.css";
 @import "../layouts/empty.css";
 
 * {
