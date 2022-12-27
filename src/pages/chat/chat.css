@@ -1,0 +1,285 @@
+.chat-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: bisque;
+}
+.chat-container {
+	position: relative;
+	display: flex;
+	width: 1680px;
+	max-width: 100%;
+	margin: 0 auto;
+	height: calc(100vh);
+	background-color: rgb(255, 255, 255);
+}
+.left-side {
+	transition: all 0.2 ease;
+	position: relative;
+	flex: 30%;
+	background-color: rgb(87, 82, 82);
+	border-right: 2px solid rgb(60, 63, 63);
+	&__header {
+		position: relative;
+		width: 100%;
+		background-color: rgb(152, 155, 158);
+		min-height: 60px;
+		display: flex;
+		align-items: center;
+		padding: 0 15px;
+	}
+}
+.right-side {
+	position: relative;
+	flex: 70%;
+	background-color: brown;
+	transition: all 0.2 ease;
+}
+
+.header {
+	&__icons {
+		cursor: pointer;
+	}
+	&__userImg {
+		display: flex;
+		position: relative;
+		cursor: pointer;
+		border-radius: 80px;
+	}
+	&__imgText {
+		display: flex;
+		align-items: center;
+	}
+	&__imgText h4 {
+		margin-left: 15px;
+		font-size: 0.8em;
+	}
+	&__imgText span {
+		font-size: 0.75em;
+		color: #3f3939;
+	}
+	&__btn-search {
+		display: flex;
+		position: absolute;
+		cursor: pointer;
+		right: 20px;
+		z-index: 1;
+	}
+	&__search-input {
+		display: flex;
+		width: 100%;
+		padding-left: 15px;
+		position: relative;
+	}
+	&__field-input {
+		background-color: rgb(255, 255, 255);
+		outline: none;
+		border: none;
+		height: 30px;
+		width: 100%;
+		text-align: center;
+	}
+}
+.chatlist {
+	position: relative;
+	height: calc(100% - 60px);
+	overflow-y: auto;
+	background-color: rgb(172, 209, 209);
+	&__block {
+		cursor: pointer;
+		position: relative;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		background-color: beige;
+		padding: 15px;
+		border-bottom: 1px solid rgb(60, 63, 63);
+		transition: padding 0.1s ease;
+	}
+	&__block:hover {
+		padding: 20px;
+		background-color: rgb(189, 189, 166);
+	}
+	&__block-avatar {
+		position: relative;
+		overflow: hidden;
+		margin-right: 15px;
+	}
+	&__details {
+		position: relative;
+		width: 100%;
+	}
+}
+.details {
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 5px;
+	}
+	&__name {
+		font-size: 1.1em;
+		font-weight: 600;
+		color: #000000;
+	}
+	&__time {
+		font-size: 0.7em;
+		color: #9b9595;
+	}
+	&__message {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__message > p {
+		color: #818080;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		font-size: 0.9em;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	&__message b {
+		background-color: #0e0d0d;
+		color: #ffff;
+		min-width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 0.75em;
+	}
+}
+
+.right-side {
+	&__header {
+		position: relative;
+		width: 100%;
+		background-color: rgb(152, 155, 158);
+		min-height: 60px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 15px;
+	}
+}
+.chatbox {
+	position: relative;
+	width: 100%;
+	height: calc(100% - 120px);
+	padding: 50px;
+	overflow-y: auto;
+	&__input {
+		position: relative;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 60px;
+		padding: 15px;
+		justify-content: space-between;
+	}
+	&__input-field {
+		padding-left: 15px;
+		height: 100%;
+		position: relative;
+		width: 100%;
+		outline: none;
+		border: none;
+		border-radius: 5px;
+	}
+	&__btn-send {
+		cursor: pointer;
+		margin-left: 15px;
+		height: 100%;
+		padding: 0 15px;
+		border: none;
+		border-radius: 10px;
+		background-color: rgb(18, 8, 26);
+		color: #ffff;
+		font-size: 0.75em;
+	}
+	&__btn-send:hover {
+		background-color: #383737;
+	}
+}
+.right-side::-webkit-scrollbar-thumb {
+	background: #e47e7e; /* цвет фона у дорожки */
+	border-radius: 8px; /* скругление углов */
+	border: 3px solid #f5cdcd; /* толщина, стиль и цвет рамки */
+}
+
+.right-side::-webkit-scrollbar-thumb:hover {
+	background: #b91414; /* ползунок меняет цвет при наведении */
+}
+.message {
+	position: relative;
+	display: flex;
+	width: 100%;
+	margin: 5px 0;
+}
+.message p {
+	position: relative;
+	right: 0;
+	text-align: right;
+	max-width: 65%;
+	padding: 12px;
+	background-color: beige;
+	border-radius: 10px;
+	font-size: 0.9em;
+}
+.message p::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -12px;
+	width: 20px;
+	height: 20px;
+	background-color: #ccd1bf;
+	border-radius: 50%;
+}
+.message > p span {
+	display: block;
+	margin-top: 5px;
+	font-size: 0.75em;
+	opacity: 0.5;
+}
+.my-message {
+	justify-content: flex-end;
+}
+.friend-message {
+	justify-content: flex-start;
+}
+.friend-message p {
+	background-color: rgb(224, 224, 216);
+	text-align: left;
+}
+.friend-message p::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -12px;
+	width: 20px;
+	height: 20px;
+	background-color: #ccd1bf;
+	border-radius: 50%;
+}
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}

@@ -1,22 +1,23 @@
-@import "../components/input/input.css";
-@import "../components/button/button.css";
-@import "../components/link/link.css";
-@import "../components/linkProfile/linkProfile.css";
-@import "../components/avatar/avatar.css";
-@import "../components/btnBack/btnBack.css";
-@import "../components/itemProfile/itemProfile.css";
-@import "../components/profile/profile.css";
-@import "../components/editProfile/editProfile.css";
-@import "../components/editPassword/editPassword.css";
+@import '../components/input/input.css';
+@import '../components/button/button.css';
+@import '../components/link/link.css';
+@import '../components/linkProfile/linkProfile.css';
+@import '../components/avatar/avatar.css';
+@import '../components/btnBack/btnBack.css';
+@import '../components/itemProfile/itemProfile.css';
+@import '../components/profile/profile.css';
+@import '../components/editProfile/editProfile.css';
+@import '../components/editPassword/editPassword.css';
 
-@import "../layouts/auth.css";
-@import "../layouts/empty.css";
+@import '../layouts/auth.css';
+@import '../layouts/empty.css';
+@import '../pages/chat/chat.css';
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
+	font-family: 'Roboto', sans-serif;
 }

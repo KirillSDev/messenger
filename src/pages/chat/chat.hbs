@@ -1,0 +1,298 @@
+---
+title: Chat
+css:
+- ../../styles/style.css
+---
+{{#extend "chat"}}
+{{#content "main"}}
+<div class="chat-container">
+    <div class="left-side">
+        {{!-- header --}}
+        <div class="left-side__header header">
+            <div class="header__userImg">
+                <img src="../../assets/avatar-circle.svg" width="40px" height="40px
+                ">
+            </div>
+            <div class="header__btn-search">
+                <img src="../../assets/icons/search.svg" width="20px" height="20px"></img>
+            </div>
+            <div class="header__search-input">
+                <input class="header__field-input" placeholder="Search" type="text">
+            </div>
+        </div>
+        {{!-- header --}}
+        {{!-- chat list --}}
+        <div class="chatlist">
+            <div class="chatlist__block" id="unread">
+                <img class="chatlist__block-avatar" src="../../assets/avatar-circle.svg" width="50px" height="50px">
+                <div class="chatlist__details details">
+                    <div class="details__head">
+                        <h4 class="details__name">Brad Pitt</h4>
+                        <p class="details__time">
+                            10:56
+                        </p>
+                    </div>
+                    <div class="details__message">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia nihil harum asperiores
+                            delectus, aliquid obcaecati nostrum, minus aut magni ullam id eligendi libero animi corporis
+                            deserunt qui molestias voluptatibus vel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chatlist__block">
+                <img class="chatlist__block-avatar" src="../../assets/avatar-circle.svg" width="50px" height="50px">
+                <div class="chatlist__details details">
+                    <div class="details__head">
+                        <h4 class="details__name">Brad Pitt</h4>
+                        <p class="details__time">
+                            10:56
+                        </p>
+                    </div>
+                    <div class="details__message">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia nihil harum asperiores
+                            delectus, aliquid obcaecati nostrum, minus aut magni ullam id eligendi libero animi corporis
+                            deserunt qui molestias voluptatibus vel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chatlist__block">
+                <img class="chatlist__block-avatar" src="../../assets/avatar-circle.svg" width="50px" height="50px">
+                <div class="chatlist__details details">
+                    <div class="details__head">
+                        <h4 class="details__name">Brad Pitt</h4>
+                        <p class="details__time">
+                            10:56
+                        </p>
+                    </div>
+                    <div class="details__message">
+                        <p>fefevvvvvvvvvvvvv</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chatlist__block">
+                <img class="chatlist__block-avatar" src="../../assets/avatar-circle.svg" width="50px" height="50px">
+                <div class="chatlist__details details">
+                    <div class="details__head">
+                        <h4 class="details__name">Brad Pitt</h4>
+                        <p class="details__time">
+                            10:56
+                        </p>
+                    </div>
+                    <div class="details__message">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia nihil harum asperiores
+                            delectus, aliquid obcaecati nostrum, minus aut magni ullam id eligendi libero animi corporis
+                            deserunt qui molestias voluptatibus vel.</p>
+                        <b>1</b>
+                    </div>
+                </div>
+            </div>
+            <div class="chatlist__block">
+                <img class="chatlist__block-avatar" src="../../assets/avatar-circle.svg" width="50px" height="50px">
+                <div class="chatlist__details details">
+                    <div class="details__head">
+                        <h4 class="details__name">Brad Pitt</h4>
+                        <p class="details__time">
+                            10:56
+                        </p>
+                    </div>
+                    <div class="details__message">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia nihil harum asperiores
+                            delectus, aliquid obcaecati nostrum, minus aut magni ullam id eligendi libero animi corporis
+                            deserunt qui molestias voluptatibus vel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{!-- chat list --}}
+    </div>
+    <div class="right-side">
+        <div class="right-side__header header">
+            <div class="header__imgText">
+                <div class="header__userImg">
+                    <img src="../../assets/avatar-circle.svg" width="40px" height="40px
+                ">
+                </div>
+                <h4>Brad Pitt<br><span>online</span></h4>
+            </div>
+            <div class="header__icons">
+                <img src="../../assets/call-outline.svg" height="20px" width="20px">
+            </div>
+        </div>
+        {{!-- chatbox --}}
+
+        <div class="chatbox">
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora odio laboriosam inventore nam
+                    iste quidem distinctio qui dolore. Voluptas quia magni dignissimos modi ipsam explicabo id iure esse
+                    facilis corporis.<span>12:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+            <div class="message my-message">
+                <p>Hi<span>12:15</span></p>
+            </div>
+            <div class="message friend-message">
+                <p>Hello Lorem, ipsum dolor sit amet consectetur adipisici<span>10:15</span></p>
+            </div>
+        </div>
+        {{!-- chatbox --}}
+
+        <div class="chatbox__input">
+            <input class="chatbox__input-field" type="text" placeholder="Our text...">
+            <button class="chatbox__btn-send">Send</button>
+        </div>
+    </div>
+</div>
+{{/content}}
+{{/extend}}
