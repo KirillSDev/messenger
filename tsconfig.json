@@ -2,10 +2,11 @@
     "compilerOptions": {
       "rootDir": "src",
       "outDir": "dist",
+      "typeRoots": ["./src/@types", "./node_modules/@types"],
       "target": "esnext",
       "declaration": false,
       "module": "CommonJS",
       "strictNullChecks": true,
       "sourceMap": true,
-    }
   }
+}
