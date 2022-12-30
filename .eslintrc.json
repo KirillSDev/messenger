@@ -27,5 +27,21 @@
         "react"
     ],
     "rules": {
+        "no-unused-vars": 2,
+        "max-len": [1, 100],
+        "@typescript-eslint/no-unused-vars": 2,
+        "no-throw-literal": "off",
+        "no-underscore-dangle": "off",
+        "class-methods-use-this": "off",
+        "no-param-reassign": [
+          "error",
+          {
+            "props": false
+          }
+        ],
+        "@typescript-eslint/member-ordering": [
+            "error",
+            { "default": ["signature", "method", "constructor", "field"] }
+          ]
     }
 }
